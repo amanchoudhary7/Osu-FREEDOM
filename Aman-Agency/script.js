@@ -1,10 +1,18 @@
-document.querySelector("body").addEventListener("mousemove",function(dets){
-    console.log(dets);
-    var cursor=document.querySelector("#cursor");
-})
 
 var tl=gsap.timeline()
 
+function cursorFollow(){
+    document.addEventListener("mousemove",function(dets){
+        // console.log(dets.x);
+        // console.log(dets.y);
+        gsap.to("#cursor",{
+            left:dets.x,
+            top:dets.y, 
+        })
+    })
+
+    Shery.makeMagnet("#rightnav h5" );
+}
 function loaderAnimatn(){
     tl.from(".line h1",{
         y:150,
@@ -54,9 +62,23 @@ function loaderAnimatn(){
 
 }
 
+function page1animatn(){
+tl.from("#navbar",{
+    opacity:0,
+})
+
+tl.from(".tagline h1",{
+    y:150,
+    delay:-0.5,
+    stagger:0.2,
+})
+}
 
 
 
+
+cursorFollow();
 loaderAnimatn();
+page1animatn();
 
 

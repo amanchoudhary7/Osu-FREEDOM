@@ -1,3 +1,8 @@
+@font-face {
+    font-family:"plain light";
+    src: url(font\plain-light-webfont.ttf);
+}
+
 *{
     padding: 0px;
     margin:0px;
@@ -12,6 +17,17 @@ html,body{
 #parent{
     background-color:#111;
     position: relative;
+}
+#cursor{
+    color:#b8b4b4;
+    height:4vh;
+    width:2vw;
+    border:2px solid #b8b4b4;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 998;
+    mix-blend-mode: difference;
+    transform:translate(-50%,-50%);
 }
 #loader{
     height:100%;
@@ -91,14 +107,7 @@ html,body{
         -webkit-text-stroke: 1px #FEFEFE;
     }
 }
-#cursor{
-    color:#b8b4b4;
-    height:3%;
-    width:1.5%;
-    background-color: #929292;
-    border-radius: 50%;
-    position: absolute;
-}
+
 #page1{
     height:100vh;
     width:100%;
@@ -109,7 +118,7 @@ html,body{
     justify-content: space-between;
     /* align-items: center; */
     font-size:large;
-    padding:3% 3.5%;
+    padding:2.6vw 4vw;
     color:#FEFEFE;
 
 }
@@ -119,7 +128,11 @@ html,body{
 }
 #rightnav{
     display:flex;
-    gap:1.5em;
+    gap:2.4rem;
+}
+#rightnav h5{
+    font-weight: 100;
+    font-size:0.9vw;
 }
 #navKeBichWala h5{
     color:#FEFEFE;
@@ -131,15 +144,25 @@ html,body{
     top:5%;
     left:27%;
 }
-#tagline{
-    margin-top:5%;
+.tagline{
     text-transform: uppercase;
     font-size:7.5vh;
     color:#FEFEFE;
-    text-align: center;
+    /* background-color: red; */
+    width: 70vw;
+    margin-left: 28vw;
     line-height: 1;
-    font-weight: 300;
-}
-#tagline h1{
+    overflow: hidden;
 
+}
+.tagline:nth-child(2){
+margin-top:15vh;
+}
+.tagline h1{
+font-weight: 600;
+}
+#webhover:hover{
+-webkit-text-stroke: 0.5px #FEFEFE;
+color:transparent;
+font-weight:500;
 }
