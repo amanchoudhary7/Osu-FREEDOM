@@ -1,0 +1,145 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family: "Plain Light";
+    color:#FEFEFE;
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+#parent{
+    background-color:#111;
+    position: relative;
+}
+#loader{
+    height:100%;
+    width:100%;
+    position:fixed;
+    z-index: 999;
+    background-color: #0B0B0B;
+    padding:10vw 25vh;
+    overflow: hidden;
+}
+.line{
+    /* background-color: red; */
+    height:fit-content;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+    gap:1.2vw;
+
+}
+#line1-part1{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:0.4vw;
+}
+#line1-part1 h5{
+    text-align:left;
+    width: 5vw;
+}
+#line1-part1 h5,#line1-part1 h6{
+ font-size:3vw;
+ font-weight:100;  
+ font-family: "Silk Serif"; 
+
+}
+
+.line h1{
+
+    text-transform: uppercase;
+    font-size:6vw;
+    font-weight:900;
+}
+#now{
+    text-transform: uppercase;
+    font-size:4.6vw;
+    font-weight:900;
+    animation-name: anime;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes anime {
+    0%{
+        font-family:"plain light";
+        opacity:1;
+        font-weight:500;
+        color:#FEFEFE;
+    }
+    48%{
+        font-family:"plain light";
+        opacity:0;
+        font-weight:500;
+        color:#FEFEFE;
+    }
+    50%{
+        font-family:"silk serif";
+        opacity:1;
+        font-weight:500;
+        color:transparent;
+        -webkit-text-stroke: 1px #FEFEFE;
+    }
+    100%{
+        font-family:"silk serif";
+        opacity:0;
+        font-weight:500;
+        color:transparent;
+        -webkit-text-stroke: 1px #FEFEFE;
+    }
+}
+#cursor{
+    color:#b8b4b4;
+    height:3%;
+    width:1.5%;
+    background-color: #929292;
+    border-radius: 50%;
+    position: absolute;
+}
+#page1{
+    height:100vh;
+    width:100%;
+    background-color: #151515;
+}
+#navbar{
+    display:flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    font-size:large;
+    padding:3% 3.5%;
+    color:#FEFEFE;
+
+}
+#leftnav{
+    display:flex;
+    gap:5em;
+}
+#rightnav{
+    display:flex;
+    gap:1.5em;
+}
+#navKeBichWala h5{
+    color:#FEFEFE;
+    font-weight: 200;
+    line-height: 1;
+}
+#navKeBichWala{
+    position:absolute;
+    top:5%;
+    left:27%;
+}
+#tagline{
+    margin-top:5%;
+    text-transform: uppercase;
+    font-size:7.5vh;
+    color:#FEFEFE;
+    text-align: center;
+    line-height: 1;
+    font-weight: 300;
+}
+#tagline h1{
+
+}
