@@ -25,7 +25,7 @@ function loaderAnimatn(){
 
     });
     tl.from("#line1-part1, .line #now",{
-        delay:-0.4,
+        delay:0.4,
         duration:1,
         opacity:0,
         onStart:function(){
