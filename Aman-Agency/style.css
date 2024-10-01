@@ -149,11 +149,12 @@ body{
 }
 .tagline{
     text-transform: uppercase;
-    font-size:7.5vh;
+    font-size:3.5vw;
+    letter-spacing: 0.4vw;
     color:#FEFEFE;
     /* background-color: red; */
     width: 70vw;
-    margin-left: 28vw;
+    margin-left: 26vw;
     line-height: 1;
     overflow: hidden;
 }
@@ -233,7 +234,7 @@ border-bottom: 10px solid #fefefe00;
     background-color: #151515;
 }
 #page4 hr{
-    margin-bottom:6vh;
+    margin-bottom:3vh;
 }
 #page-4content{
 margin-left:28vw;
@@ -295,4 +296,111 @@ margin-right: 4vw;
     min-height:100vh;
     width:100%;
     background-color: #151515;
+    position: relative;
+    padding-top:8vh;
+}
+.elem{
+ white-space: nowrap;
+
+}
+
+.elem h1{
+    margin-bottom:1vw;
+    text-transform: uppercase;
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #FEFEFE;
+    color:transparent;
+    font-weight:200;
+    display: inline-block;
+    margin-right:16px;
+    animation-name: textAnime;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* background-color: #3F7DF4; */
+
+}
+.elem span ,.elem2 span{
+    font-family:"sile serif";
+    font-style:italic;
+    -webkit-text-stroke: 1px #FEFEFE;
+    color:transparent;
+
+}
+@keyframes textAnime {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+        /* subtracting  16px that is margin and 4 px margin which is default bw two div  - so that there is no jhatkaa in continuity*/
+    }
+}
+.elem2 h1{
+    margin-bottom:1vw;
+    text-transform: uppercase;
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #FEFEFE;
+    color:transparent;
+    font-weight:200;
+    display: inline-block;
+    margin-right:7px;
+    transform: translateX(calc(-100%-20px));
+    animation-name: textAnime;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* background-color: #3F7DF4; */
+    animation-direction: reverse;
+    /* same animation but in reverse */
+}
+.elem2{
+    white-space: nowrap;
+}
+#page6{
+    /* min-height:100vh; */
+    width:100%;
+}
+#content-parent{
+    padding-top:10vh;
+    margin-left: 28%;
+}
+#page6 #top{
+font-size: 15vh;
+text-transform: uppercase;
+/* margin-left: 28%; */
+margin-right: 5%;
+padding-bottom:8vh;
+}
+#page6 hr{
+    /* margin-left: 28%; */
+    margin-right: 5%;
+}
+#page6 #content{
+    /* margin-left: 28%; */
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+    /* width:60%; */
+    padding:10vh 0;
+}
+#content1,#content2,#content3{
+    width:50%;
+    line-height: 1.6vw;
+}
+#content p{
+    margin-bottom:1.6vw;
+}
+#content h2{
+    font-weight: 400;
+    font-size: 1.5vw;
+    width:50%;
+}
+#content3 a{
+    color:#FEFEFE;
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+#footercopy{
+    padding: 5vh 0;
 }
